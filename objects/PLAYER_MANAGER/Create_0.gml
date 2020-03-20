@@ -1,16 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 //gravity
-grav = 1;
+grav = 0.5;
 
 //x velocity
 x_vel = 0;
 
 //y velocity
-y_vel = 0;
+y_vel = 1;
 
 //jump velocity
-jump_vel = -20;
+jump_vel = -50;
 
 //x accel
 x_accel = 1;
@@ -18,6 +18,7 @@ x_accel = 1;
 //max vel
 max_x_vel = 5;
 
+//movement
 died = false;
 
 //Movement

@@ -10,7 +10,7 @@ x_vel = 0;
 y_vel = 1;
 
 //jump velocity
-jump_vel = -50;
+jump_vel = -25;
 
 //x accel
 x_accel = 1;

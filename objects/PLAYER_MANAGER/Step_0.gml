@@ -97,6 +97,7 @@ if (!died)
 			image_index = 0;
 			break;
 		}
+		
 		//FREEZES GAME FOR SOME REASON!!!
 		//Infinite action must be happening
 		/*

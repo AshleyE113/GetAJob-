@@ -44,12 +44,17 @@ if (!died)
 	{
 		var colliding = false;
 		var collide_with_burg = noone;
+		var collide_with_paper = noone;
+		var collide_with_dollar = noone;
+		
 		//COLLISON BREAK DOWN 
 			if (sign_of_y >= 0) // only check collisions if we're moving down
 			{
 			//image_index = 0;
 				collide_with_burg = instance_place(x, y+ sign_of_y, obj_burger)
-			
+				collide_with_paper = instance_place(x, y + sign_of_y, obj_paper);
+				collide_with_dollar = instance_place(x,y +sign_of_y, obj_dollar);
+			//Burger Collision___________________________________	
 				if (collide_with_burg != noone && dying != true)
 				{
 					if (place_meeting(x,y, collide_with_burg) == false)
@@ -58,6 +63,24 @@ if (!died)
 						instance_destroy(collide_with_burg);
 					}
 				}//collide w/ burg and dying not true
+			//Paper Collision_____________________________________
+				if (collide_with_paper != noone && dying != true)
+				{
+					if (place_meeting(x,y, collide_with_paper) == false)
+					{
+						colliding = true;
+						instance_destroy(collide_with_paper);
+					}
+				} //Collide w/ Paper
+			//Dollar Collision_______________________________________
+				if (collide_with_dollar != noone && dying != true)
+				{
+					if (place_meeting(x,y, collide_with_dollar) == false)
+					{
+						colliding = true;
+						instance_destroy(collide_with_dollar);
+					}
+				}//Collide w/ Dollar
 			}// for sign of y
 	
 		if (!collide_with_burg)
@@ -74,9 +97,41 @@ if (!died)
 			image_index = 0;
 			break;
 		}
+		//FREEZES GAME FOR SOME REASON!!!
+		//Infinite action must be happening
+		/*
+		// Paper (runs but is frozen with this)
+		if (!collide_with_paper)
+		{
+			y+= sign_of_y;
+			y_movement -= sign_of_y;
+		}
+		else
+		{
+			y = y + sign_of_y;
+			y_vel = jump_vel;
+
+			image_speed = 1;
+			image_index = 0;
+			break;
+		}
+		
+		//Dollar (doesn't run at all)
+		if (!collide_with_dollar)
+		{
+			y+= sign_of_y;
+			y_movement -= sign_of_y;
+		}
+		else
+		{
+			y = y + sign_of_y;
+			y_vel = jump_vel;
+
+			image_speed = 1;
+			image_index = 0;
+			break;
+		}
+		*/
 	}//For while
-		
-//_____________________________________________________________________________________		
-		
 }//For !died
 

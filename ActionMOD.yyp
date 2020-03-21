@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "04f37c83-9304-4d03-b29e-4ae08d5828e7",
+            "Value": {
+                "id": "c34a0fb5-49be-4037-abae-4fb687f8378f",
+                "resourcePath": "objects\\obj_dollar\\obj_dollar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0607ecb7-960f-4434-93c4-38316b2a92d4",
             "Value": {
                 "id": "248e42f5-b547-4dc9-a522-73eba70d6f04",
@@ -67,6 +75,14 @@
             "Value": {
                 "id": "2546dcfb-0d6e-41e9-a305-36d2d1caa21d",
                 "resourcePath": "objects\\PLAYER_MANAGER\\PLAYER_MANAGER.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "31b41ffb-a760-4f5a-ba60-f3ddb0a4e9d9",
+            "Value": {
+                "id": "a6708645-0a18-453e-a09c-ed42985ee165",
+                "resourcePath": "objects\\obj_paper\\obj_paper.yy",
                 "resourceType": "GMObject"
             }
         },
